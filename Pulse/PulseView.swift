@@ -1,14 +1,4 @@
-//
-//  PulseView.swift
-//  Pulse
-//
-//  Created by Omar Allaham on 1/19/17.
-//  Copyright © 2017 Bemaxnet. All rights reserved.
-//
-
-import UIKit
-
-class PulseView: UIView {
+open class PulseView: UIView {
 
    var pulseLayer = PulseLayer()
 
@@ -121,7 +111,7 @@ class PulseView: UIView {
       }
    }
 
-   override func layoutSubviews() {
+   open override func layoutSubviews() {
       super.layoutSubviews()
 
       if !(layer.sublayers?.contains(pulseLayer) ?? false) {
